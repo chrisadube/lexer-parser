@@ -1,0 +1,34 @@
+INSTRUCTIONS
+
+Project2
+
+*** EXECUTION ***
+
+To run a .txt source code file, use it as a parameter in command prompt. You can run multiple files at once.
+IE: java Project2 if.txt
+IE: java Project2 if.txt hiding-error.txt ab.txt
+
+Upon successful analysis of a file, the AST is displayed, followed by "TRUE", indicating it was successful.
+
+Upon erronous analysis of a file, an error message is displayed that includes the position, a set of expected tokens, and the token that it found.
+
+
+
+*** OUTPUT VARIABLES ***
+
+I use the following four variables, hard-coded, that can be changed. Each variable controls certain outputs:
+
+'displayProc' - "false" by default. Displays begin/end during the call of every procedure, which is useful for debugging. Feel free to change to "true".
+
+'displayLexical' - "false" by default. Displays lexical tokens (during syntax scan) as they are parsed, which is useful for debugging. Feel free to change to "true".
+
+'displayAST' - "true" by default. Displays the abstract-syntax-tree using in-order traversal after the syntax scan is complete and successful.
+
+'analyzerType' - "Syntax" by default. Can be set to Lexical or Syntax. This is the choice of analysis.
+
+
+
+*** EXTRA CREDIT ***
+
+AST is fully implemented, tested vigorously, and displays after successful completion of the syntax scan. It is recursively executed using in-order traversal. It displays the 'kind', 'position', 'child0', 'child1', and 'child2' of every node.
+
